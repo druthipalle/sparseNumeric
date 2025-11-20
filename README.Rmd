@@ -20,11 +20,11 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 
-The goal of sparseNumeric is to provide an S4 class for sparse numeric vectors and a set of methods to work with them without ever converting to a dense vector. 
+The goal of sparseNumeric is to provide a class for sparse numeric vectors and a set of methods to work with them without ever converting to a dense vector. 
 
 A sparse_numeric object stores:
 - value: the non-zero entries
-- pos: their positions (1-based, sorted, unique)
+- pos: their positions
 - length: the full length of the underlying vector
 
 The package implements arithmetic, summary, and utility methods such as:
