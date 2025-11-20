@@ -1,13 +1,4 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # sparseNumeric
-
-<!-- badges: start -->
-
-<!-- R CMD check badge will go here after we set up GitHub Actions -->
-
-<!-- badges: end -->
 
 The goal of sparseNumeric is to provide a class for sparse numeric
 vectors and a set of methods to work with them without ever converting
@@ -31,15 +22,15 @@ devtools::install_github("druthipalle/sparseNumeric")
 #> Using GitHub PAT from the git credential store.
 #> Downloading GitHub repo druthipalle/sparseNumeric@HEAD
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/c_/zwvmhty113b4mqm71k50xd100000gn/T/RtmpFQD8uq/remotesd75d27113010/druthipalle-sparseNumeric-f2b40e9/DESCRIPTION’ ... OK
-#> * preparing ‘sparseNumeric’:
-#> * checking DESCRIPTION meta-information ... OK
-#> * checking for LF line-endings in source and make files and shell scripts
-#> * checking for empty or unneeded directories
-#> Omitted ‘LazyData’ from DESCRIPTION
-#> * building ‘sparseNumeric_0.1.0.tar.gz’
-#> Installing package into '/private/var/folders/c_/zwvmhty113b4mqm71k50xd100000gn/T/RtmpuI6g1W/temp_libpathc448aadb16c'
-#> (as 'lib' is unspecified)
+#>      checking for file ‘/private/var/folders/c_/zwvmhty113b4mqm71k50xd100000gn/T/RtmpedPWHf/remotesd53376de54bd/druthipalle-sparseNumeric-f2b40e9/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/c_/zwvmhty113b4mqm71k50xd100000gn/T/RtmpedPWHf/remotesd53376de54bd/druthipalle-sparseNumeric-f2b40e9/DESCRIPTION’
+#>   ─  preparing ‘sparseNumeric’:
+#>      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>      Omitted ‘LazyData’ from DESCRIPTION
+#>   ─  building ‘sparseNumeric_0.1.0.tar.gz’
+#>      
+#> 
 ```
 
 ## Example
@@ -124,4 +115,37 @@ sparse_crossprod(x_sp, y_sp)
 plot(x_sp, y_sp)
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+![](reference/figures/README-unnamed-chunk-4-1.png)
+
+# Package index
+
+## All functions
+
+- [`length(`*`<sparse_numeric>`*`)`](length-sparse_numeric-method.md) :
+  Length of a sparse_numeric vector
+- [`mean(`*`<sparse_numeric>`*`)`](mean-sparse_numeric-method.md) : Mean
+  of a sparse_numeric vector
+- [`norm()`](norm.md) : Euclidean norm of a sparse_numeric vector
+- [`plot(`*`<sparse_numeric>`*`,`*`<sparse_numeric>`*`)`](plot-sparse_numeric-sparse_numeric-method.md)
+  : Plot two sparse_numeric vectors
+- [`show(`*`<sparse_numeric>`*`)`](show-sparse_numeric-method.md) : Show
+  method for sparse_numeric
+- [`sparse_add()`](sparse_add.md) : Add two sparse_numeric vectors
+- [`` `+`( ``*`<sparse_numeric>`*`,`*`<sparse_numeric>`*`)`](sparse_arith_ops.md)
+  [`` `-`( ``*`<sparse_numeric>`*`,`*`<sparse_numeric>`*`)`](sparse_arith_ops.md)
+  [`` `*`( ``*`<sparse_numeric>`*`,`*`<sparse_numeric>`*`)`](sparse_arith_ops.md)
+  : Arithmetic operators for sparse_numeric vectors
+- [`sparse_crossprod()`](sparse_crossprod.md) : Dot product of
+  sparse_numeric vectors
+- [`sparse_mult()`](sparse_mult.md) : Elementwise multiplication of
+  sparse_numeric vectors
+- [`sparse_numeric-class`](sparse_numeric-class.md) : Sparse numeric
+  vector S4 class
+- [`sparse_numeric()`](sparse_numeric.md) : Construct a sparse_numeric
+  vector from a numeric vector
+- [`sparse_sub()`](sparse_sub.md) : Subtract two sparse_numeric vectors
+- [`standardize()`](standardize.md) : Standardize a sparse_numeric
+  vector
+- [`sum(`*`<sparse_numeric>`*`)`](sum-sparse_numeric-method.md) : Sum of
+  a sparse_numeric vector
+
