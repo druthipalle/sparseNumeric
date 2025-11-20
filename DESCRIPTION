@@ -1,16 +1,15 @@
 Package: sparseNumeric
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Sparse Numeric Vector Class and Methods
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Druthi", "Palle",
+      email = "druthipalle@utexas.edu",
       role = c("aut", "cre")
     )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
-Encoding: UTF-8
-LazyData: true
+)
+
+Description: Implements a sparse numeric vector class and methods
+    including mean, norm, and standardization without converting to 
+    dense vectors.
