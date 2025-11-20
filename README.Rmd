@@ -2,7 +2,11 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+# sparseNumeric
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/druthipalle/sparseNumeric/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/druthipalle/sparseNumeric/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -12,13 +16,6 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-
-# sparseNumeric
-
-<!-- badges: start --> 
-<!-- R CMD check badge will go here after we set up GitHub Actions --> 
-<!-- badges: end -->
-
 
 The goal of sparseNumeric is to provide a class for sparse numeric vectors and a set of methods to work with them without ever converting to a dense vector. 
 

@@ -1,12 +1,9 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # sparseNumeric
 
 <!-- badges: start -->
 
-<!-- R CMD check badge will go here after we set up GitHub Actions -->
-
+[![R-CMD-check](https://github.com/druthipalle/sparseNumeric/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/druthipalle/sparseNumeric/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of sparseNumeric is to provide a class for sparse numeric
@@ -31,14 +28,14 @@ devtools::install_github("druthipalle/sparseNumeric")
 #> Using GitHub PAT from the git credential store.
 #> Downloading GitHub repo druthipalle/sparseNumeric@HEAD
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/c_/zwvmhty113b4mqm71k50xd100000gn/T/RtmpFQD8uq/remotesd75d27113010/druthipalle-sparseNumeric-f2b40e9/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/c_/zwvmhty113b4mqm71k50xd100000gn/T/Rtmp8f8GSs/remotesda5b6038540a/druthipalle-sparseNumeric-22318ec/DESCRIPTION’ ... OK
 #> * preparing ‘sparseNumeric’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
 #> * checking for empty or unneeded directories
 #> Omitted ‘LazyData’ from DESCRIPTION
 #> * building ‘sparseNumeric_0.1.0.tar.gz’
-#> Installing package into '/private/var/folders/c_/zwvmhty113b4mqm71k50xd100000gn/T/RtmpuI6g1W/temp_libpathc448aadb16c'
+#> Installing package into '/private/var/folders/c_/zwvmhty113b4mqm71k50xd100000gn/T/RtmpuI6g1W/temp_libpathc4482a17fb82'
 #> (as 'lib' is unspecified)
 ```
 
