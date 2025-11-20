@@ -1,0 +1,94 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# sparseNumeric
+
+<!-- badges: start --> 
+<!-- R CMD check badge will go here after we set up GitHub Actions --> 
+<!-- badges: end -->
+
+
+The goal of sparseNumeric is to provide an S4 class for sparse numeric vectors and a set of methods to work with them without ever converting to a dense vector. 
+
+A sparse_numeric object stores:
+- value: the non-zero entries
+- pos: their positions (1-based, sorted, unique)
+- length: the full length of the underlying vector
+
+The package implements arithmetic, summary, and utility methods such as:
+- sparse_add(), sparse_sub(), sparse_mult(), sparse_crossprod()
+- sum(), mean(), norm(), standardize()
+- plot() and show() methods for visualization and printing
+
+
+## Installation
+
+You can install the development version of sparseNumeric like so:
+
+```{r}
+# install.packages("devtools")   # if needed
+devtools::install_github("druthipalle/sparseNumeric")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(sparseNumeric)
+
+## create a dense vector
+x_dense <- c(0,0,3,0,5)
+
+## convert to spare_numeric
+x_sp <- sparse_numeric(x_dense)
+x_sp
+
+## length
+length(x_sp)
+
+## sum and mean
+sum(x_sp)
+mean(x_sp)
+
+## euclidean norm
+norm(x_sp)
+
+## standardize
+x_std <- standardize(x_sp)
+x_std
+
+mean(x_std)  # should be ~0
+sd(x_std)    # should be ~1
+```
+
+```{r}
+## arithmetic and dot product
+
+y_dense <- c(1,0,0,2,0)
+y_sp <- sparse_numeric(y_dense)
+
+## elementwise operations
+sparse_add(x_sp, y_sp)
+sparse_sub(x_sp, y_sp)
+sparse_mult(x_sp, y_sp)
+
+## dot product
+sparse_crossprod(x_sp, y_sp)
+```
+
+```{r}
+plot(x_sp, y_sp)
+```

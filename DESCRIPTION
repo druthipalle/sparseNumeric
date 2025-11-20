@@ -2,14 +2,24 @@ Package: sparseNumeric
 Type: Package
 Title: Sparse Numeric Vector Class and Methods
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Druthi", "Palle",
-      email = "druthipalle@utexas.edu",
-      role = c("aut", "cre")
-    )
-)
-
+Authors@R: 
+    person("Druthi", "Palle",
+           email = "druthipalle@utexas.edu",
+           role = c("aut", "cre"))
 Description: Implements a sparse numeric vector class and methods
     including mean, norm, and standardization without converting to 
     dense vectors.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    methods,
+    stats,
+    graphics
+Suggests:
+    testthat (>= 3.0.0),
+    covr,
+    pkgdown
+Config/testthat/edition: 3
